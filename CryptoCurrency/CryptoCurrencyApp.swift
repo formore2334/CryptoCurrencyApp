@@ -11,7 +11,8 @@ import SwiftUI
 struct CryptoCurrencyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
+                .environmentObject(CoinsViewModel())
         }
     }
 }
